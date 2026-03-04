@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 200px; padding: 10px; font-family: sans-serif; }
+    .toggle { margin-bottom: 10px; display: flex; align-items: center; }
+    label { margin-left: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h3>Feed Options</h3>
+  
+  <div class="toggle">
+    <input type="checkbox" id="blockBoosted">
+    <label for="blockBoosted">Hide Boosted Posts</label>
+  </div>
+
+  <div class="toggle">
+    <input type="checkbox" id="blockStories">
+    <label for="blockStories">Hide Stories</label>
+  </div>
+
+  <div class="toggle">
+    <input type="checkbox" id="blockSponsored">
+    <label for="blockSponsored">Hide Sponsored Posts</label>
+  </div>
+
+  <hr>
+  <h3>Side Options</h3>
+
+  <div class="toggle">
+    <input type="checkbox" id="blockHottestPosts">
+    <label for="blockHottestPosts">Hide Hottest Posts</label>
+  </div>
+  
+  <div class="toggle">
+    <input type="checkbox" id="blockTrending">
+    <label for="blockTrending">Hide Trending</label>
+  </div>
+  
+  <div class="toggle">
+    <input type="checkbox" id="blockSuggestions">
+    <label for="blockSuggestions">Hide People/Page Suggestions</label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

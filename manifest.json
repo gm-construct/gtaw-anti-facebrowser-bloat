@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GTAW Anti Facebrowser Bloat",
+  "version": "1.0",
+  "description": "Allows users to toggle visibility for specific post types on GTAW's Facebrowser.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://face.gta.world/*"], 
+      "js": ["index.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
